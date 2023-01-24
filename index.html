@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/98dfe8374d.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <title>Submission</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home"><img src="assets/img/logo.png" alt="logo"></a>
+            <div id="navLinks" class="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div id="home" class="text-box">
+            <h1>I'm Gregorius Damar</h1>
+            <p>And this is my portfolio website</p>
+            <a class="hero-btn" href="#aboutMe">Let's get to know me</a>
+        </div>
+    </header>
+
+    <main>
+        <aside id="aboutMe">
+        <h1>About Me</h1>
+        <img src="assets/img/PERKAP_DAMAR (3).JPG" alt="foto">
+        <h3>I'm Gregorius Damar Prakoso Pulunggono.</h3>
+        <p>Currently a student at Institut Teknologi Telkom Purwokerto studying Software Engineering</p>
+        </aside>
+
+        <article id="skills"class="skills">
+        <h1>Skills</h1>
+        <h2>Here are my skills</h2>
+            
+            <div class="row">
+                <div class="skills-col">
+                    <i class="fa-solid fa-layer-group fa-5x"></i>
+                    <h2>UI/UX</h2>
+                    <p>I've done some projects and assignments related to UI/UX</p>
+                </div>
+                <div class="skills-col">
+                    <i class="fa-solid fa-palette fa-5x"></i>
+                    <h2>Illustration</h2>
+          <p>I take advantage of my freetime by doing illustration digitally and traditionally</p>
+                </div>
+
+                <div class="skills-col">
+                    <i class="fa-solid fa-language fa-5x"></i>
+                    <h2>Foreign Language</h2>
+          <p>I also like to learn a few foreign language such as English, French and Japanese</p>
+            </div>
+            </div>
+                
+        </article>
+
+    </main>
+    <footer id="contact">
+        <h1>Contact</h1>
+        <h2>Check out my social media</h2>
+        <div class="icons">
+            <a class="icons-github" href="https://github.com/dqmirr" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a class="icons-discord" href="https://discordapp.com/user/2506" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-discord fa-2x"></i></a>
+            <a class="icons-instagram" href="https://instagram.com/dqmarr_" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        </div>
+        <p>This website was made for submission to complete Basic Web Programming class on Dicoding</p>
+    </footer>
+    
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
