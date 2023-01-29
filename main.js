@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', getData());
 async function getData() {
   await fetch('pahlawan.json')
     .then(pahlawan => pahlawan.json())
-    .then(hero => {
+    .then(pahlawan => {
       new DataTable('#tablePahlawan', {
-        data: hero,
+        data: pahlawan,
         columns: [
           { data: 'name', title: 'Nama' },
           { data: 'birth_year', title: 'Tahun Lahir' },
