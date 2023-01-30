@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', getData());
-
+const apiURL = 'https://indonesia-public-static-api.vercel.app/api/heroes';
 async function getData() {
-  await fetch('pahlawan.json')
+  await fetch(apiURL)
     .then(pahlawan => pahlawan.json())
     .then(pahlawan => {
       new DataTable('#tablePahlawan', {
