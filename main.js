@@ -1,7 +1,7 @@
+document.addEventListener('DOMContentLoaded', getData());
 const apiURL = 'https://indonesia-public-static-api.vercel.app/api/heroes';
 
-const getData = async () => {
-document.addEventListener('DOMContentLoaded', getData());
+ async function getData() {
   await fetch(apiURL)
     .then(pahlawan => pahlawan.json())
     .then(pahlawan => {
